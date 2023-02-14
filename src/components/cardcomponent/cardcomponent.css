@@ -1,0 +1,68 @@
+.stat__cards{
+    display: flex;
+}
+
+.profile__cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card .card__info{
+    display: grid;
+    place-content: center;
+}
+
+.donut-ring {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.ring {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.ring.red {
+    top: 0;
+    left: 0;
+    background-color: #0B0D46;
+    border-radius: 100% 0 0 0;
+}
+
+.ring.blue {
+    top: 0;
+    right: 0;
+    background-color: #0B0D46;
+    border-radius: 0 100% 0 0;
+}
+
+.ring.orange {
+    bottom: 0;
+    background-color: #0B0D46;
+    border-radius: 0 0 0 100%;
+}
+
+.ring.green {
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 0 0 100% 0;
+}
+
+.cutout {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1024px) {
+    
+}

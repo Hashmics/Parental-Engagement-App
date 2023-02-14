@@ -1,0 +1,33 @@
+.calendar{
+    width: 30%;
+    height: 50vh;
+    padding-left: 40px;
+}
+
+.calendar .show__calendar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #0B0D46;
+    color: white;
+
+}
+
+.calendar .show__calendar button{
+    color: #0B0D46;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calendar .show__event{
+    display: grid;
+    place-content: center;
+    padding: 20px;
+}
+
+.calendar .show__event button {
+    color:#0B0D46;
+    padding: 10px;
+    border-radius:10px ;
+}

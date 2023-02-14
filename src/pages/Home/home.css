@@ -1,0 +1,23 @@
+/* .home {
+    color: var(--main-color);
+} */
+
+.home__content {
+    padding-left: 300px;
+    background-color: #fafafb;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+.home__content .page__header {
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin-left: 40px;
+}
+
+.home__content-main {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+}

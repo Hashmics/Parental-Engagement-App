@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home/home'
+import About from './pages/About/About'
+import Contact from './pages/Contact/Contact'
+import Sidebar from './components/sidebar/sidebar'
+import Reports from './pages/reports/Reports'
+import TeacherProfile from './pages/teacherprofile/TeacherProfile'
+import ParentProfile from './pages/parentprofile/ParentProfile'
+import Chat from './pages/chat/Chat'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Sidebar/>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path='/About' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/reports' element={<Reports/>}/>
+        <Route path='/teacherprofile' element={<TeacherProfile />} />
+        <Route path='/parentprofile' element={<ParentProfile />} />
+        <Route path='/chat' element={<Chat/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+

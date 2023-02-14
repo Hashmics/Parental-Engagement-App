@@ -1,0 +1,30 @@
+[
+    {
+        "display_name": "Dashboard",
+        "route": "/"
+    },
+    {
+        "display_name":"Reports",
+        "route":"/reports",
+        "icon":"HiOutlineDocument"
+    },
+    {
+        "display_name":"Chat",
+        "route":"/chat"
+    },
+    {
+        "display_name": "About Us",
+        "route": "/about",
+        "icon": "bx bx-hand"
+    },
+    {
+        "display_name": "Contact Us",
+        "route": "/contact",
+        "icon": "bx bx-contact"
+    },
+    {
+        "display_name": "Log Out",
+        "route": "/logout",
+        "icon": "bx bx-cog"
+    }
+]
